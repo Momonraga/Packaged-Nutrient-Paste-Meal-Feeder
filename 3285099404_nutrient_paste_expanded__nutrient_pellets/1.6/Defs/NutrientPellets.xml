@@ -1,0 +1,50 @@
+<Defs>
+    <!--<ThingDef ParentName="Kibble">
+        <defName>NP_PastePellets</defName>
+        <label>nutrient pellets</label>
+        <description>Animal feed made from hardened paste pellets. Fits most animals' diets.</description>
+        <graphicData>
+            <texPath>Things/NP_PastePellets</texPath>
+        </graphicData>
+    </ThingDef>-->
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>NP_PastePellets</defName>
+        <label>nutrient pellets</label>
+        <description>Animal feed made from hardened paste pellets. Fits most animals' diets.</description>
+        <thingCategories>
+          <li>Foods</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/NP_PastePellets</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+          <MarketValue>1.1</MarketValue>
+          <Mass>0.015</Mass>
+          <Nutrition>0.05</Nutrition>
+          <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+          <foodType>Kibble</foodType>
+          <preferability>RawBad</preferability>
+          <tasteThought>AteKibble</tasteThought>
+          <optimalityOffsetHumanlikes>-30</optimalityOffsetHumanlikes>
+          <optimalityOffsetFeedingAnimals>15</optimalityOffsetFeedingAnimals>
+          <ingestEffect>EatVegetarian</ingestEffect>
+          <ingestSound>RawVegetable_Eat</ingestSound>
+        </ingestible>
+        <comps>
+          <li Class="CompProperties_Ingredients">
+            <performMergeCompatibilityChecks>false</performMergeCompatibilityChecks>
+            <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+          </li>
+		  
+		    <li Class="CompProperties_Rottable">
+            <daysToRotStart>0.75</daysToRotStart> 
+            <rotDestroys>true</rotDestroys>
+          </li>
+ 
+        </comps>
+        <allowedArchonexusCount>200</allowedArchonexusCount>
+    </ThingDef>
+</Defs>

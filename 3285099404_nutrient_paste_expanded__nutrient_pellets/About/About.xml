@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Nutrient Paste Expanded - Nutrient Pellets</name>
+	<author>ThatHitmann (Commissioned by Moxie)</author>
+	<packageId>Moxie.NutrientPellets</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>Tweak for Vanilla Nutrient Paste Expanded to allow the nutrient paste feeder to be toggled to output nutrient kibble pellets instead of meals. The kibble expires like other nutrient paste, but is way more efficient at feeding animals.</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>VanillaExpanded.VNutrientE</packageId>
+			<displayName>Vanilla Nutrient Paste Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2920385763</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>VanillaExpanded.VNutrientE</li>
+	</loadAfter>
+</ModMetaData>

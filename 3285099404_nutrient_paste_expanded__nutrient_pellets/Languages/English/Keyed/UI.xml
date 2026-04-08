@@ -1,0 +1,6 @@
+<LanguageData>
+    <NP.SwitchModeTo>Switch to: {0}</NP.SwitchModeTo>
+    <NP.KibblePerNutrientPasteMeal>Pellet to meal ratio: {0}</NP.KibblePerNutrientPasteMeal>
+    <NP.KibblePerNutrientPasteMealDescription>Nutrient pellets per nutrient meal equivalent (default: 16)</NP.KibblePerNutrientPasteMealDescription>
+    <NP.KibbleReport>{0} ({1} pellets)</NP.KibbleReport>
+</LanguageData>

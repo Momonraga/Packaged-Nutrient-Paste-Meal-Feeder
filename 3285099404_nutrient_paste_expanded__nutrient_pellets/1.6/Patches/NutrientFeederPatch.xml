@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="VNPE_NutrientPasteFeeder"]/comps/li[@Class="PipeSystem.CompProperties_ConvertResourceToThing"]</xpath>
+        <value>
+            <li Class="NutrientPellets.CompProperties_ConvertResourceToThingToggle">
+                <pipeNet>VNPE_NutrientPasteNet</pipeNet>
+                <maxOutputStackSize>5</maxOutputStackSize>
+                <thing>MealNutrientPaste</thing>
+                <altThing>NP_PastePellets</altThing>
+				<thingThing>MealPackagedNutrientPaste</thingThing>
+            </li>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VNPE_NutrientPasteFeeder"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+        <value>
+            <li>NP_PastePellets</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VNPE_NutrientPasteFeeder"]/building/defaultStorageSettings/filter/thingDefs</xpath>
+        <value>
+            <li>NP_PastePellets</li>
+        </value>
+    </Operation>
+</Patch>
